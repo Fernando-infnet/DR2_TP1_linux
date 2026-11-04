@@ -1,0 +1,72 @@
+Exercício 8 - Comandos auxiliares
+
+---------- ls ----------
+$ type ls
+ls is /usr/bin/ls
+
+$ which ls
+/usr/bin/ls
+
+$ help ls
+bash: help: no help topics match `ls'.  Try `help help' or `man -k ls' or `info ls'.
+
+$ ls --help | head -8
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all
+         do not ignore entries starting with .
+  -A, --almost-all
+
+(help não acha o ls porque ele não é um comando interno do bash, é um programa em /usr/bin)
+
+---------- rm ----------
+$ man rm
+bash: man: command not found
+
+$ apropos remove
+bash: apropos: command not found
+
+$ whatis rm
+bash: whatis: command not found
+
+$ info rm | head -12
+File: coreutils.info,  Node: rm invocation,  Next: shred invocation,  Prev: mv invocation,  Up: Basic operations
+
+11.5 ‘rm’: Remove files or directories
+======================================
+
+‘rm’ removes each given FILE.  By default, it does not remove
+directories.  Synopsis:
+
+     rm [OPTION]... [FILE]...
+
+   If the ‘-I’ or ‘--interactive=once’ option is given, and there are
+more than three files or the ‘-r’, ‘-R’, or ‘--recursive’ are given,
+
+$ rm --help | head -8
+Usage: rm [OPTION]... [FILE]...
+Remove (unlink) the FILE(s).
+
+  -f, --force
+         ignore nonexistent files and arguments, never prompt
+  -i
+         prompt before every removal
+  -I
+
+(aqui no meu Arch o man-db não está instalado, por isso man, apropos e whatis não funcionaram.
+ dá pra instalar com: sudo pacman -S man-db man-pages)
+
+---------- alias ----------
+$ alias ll='ls -lah'
+
+$ type ll
+ll is aliased to `ls -lah'
+
+$ ll ~/bin
+total 24K
+drwxr-xr-x  2 intra intra 4.0K Oct  1  2025 .
+drwx------ 96 intra intra  20K Nov  3 22:23 ..
+

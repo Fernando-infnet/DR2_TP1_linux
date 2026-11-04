@@ -1,0 +1,38 @@
+Exercício 3 - Comandos básicos
+
+$ date
+Tue Nov  3 10:24:07 PM -03 2026
+
+$ cal
+    November 2026   
+Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30               
+                    
+
+$ df
+Filesystem      1K-blocks       Used Available Use% Mounted on
+/dev/sda6      1689484272 1440668992 162920984  90% /
+devtmpfs         15873744          0  15873744   0% /dev
+tmpfs            15940028     512460  15427568   4% /dev/shm
+efivarfs              128         64        60  52% /sys/firmware/efi/efivars
+tmpfs             6376012       2876   6373136   1% /run
+none                 1024          0      1024   0% /run/credentials/systemd-journald.service
+tmpfs            15940028     203812  15736216   2% /tmp
+/dev/sda5          304536      15664    288872   6% /boot/efi
+tmpfs             3188004        192   3187812   1% /run/user/1000
+
+$ free
+               total        used        free      shared  buff/cache   available
+Mem:        31880056    12820876    11695136      512732     8568140    19059180
+Swap:        4194300     1864432     2329868
+
+$ exit
+(fecha o terminal / encerra a sessão do shell)
+
+Comandos que mostram armazenamento e memória:
+- df   -> armazenamento (espaço usado e livre nas partições)
+- free -> memória (RAM e swap)

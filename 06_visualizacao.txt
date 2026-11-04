@@ -1,0 +1,54 @@
+Exercício 6 - Visualização de arquivos
+
+$ ls ~
+32px-X_logo_2023.svg.png
+bashformat.sh
+2026-05-24-12-53-38.010-VirtualBoxVM-22879.log
+2026-05-24-12-53-47.000-VirtualBoxVM-22983.log
+2026-05-24-13-48-26.099-VirtualBoxVM-23562.log
+2026-05-24-13-57-40.007-VirtualBoxVM-42340.log
+2026-05-24-19-36-22.094-VirtualBoxVM-145586.log
+2026-05-24-21-10-08.076-VirtualBoxVM-176844.log
+2026-05-25-14-08-31.093-VirtualBoxVM-289525.log
+2026-05-25-14-09-46.055-VirtualBoxVM-302372.log
+2026-05-25-15-24-41.028-VirtualBoxVM-332631.log
+2026-05-25-16-19-27.097-VirtualBoxVM-350412.log
+2026-05-25-22-03-29.095-VirtualBoxVM-444326.log
+2026-05-26-09-26-19.025-VirtualBoxVM-56929.log
+2026-05-26-19-30-01.067-VirtualBoxVM-214210.log
+2026-05-27-13-55-13.013-VirtualBoxVM-370133.log
+2026-05-27-18-43-57.020-VirtualBoxVM-424029.log
+2026-05-28-14-33-57.060-VirtualBoxVM-659315.log
+2026-05-28-14-36-23.028-VirtualBoxVM-660871.log
+2026-05-28-16-22-40.026-VirtualBoxVM-687129.log
+
+(tem muita coisa no meu diretório pessoal, mostrei só alguns)
+
+$ file ~/32px-X_logo_2023.svg.png
+/home/intra/32px-X_logo_2023.svg.png: PNG image data, 32 x 29, 8-bit gray+alpha, non-interlaced
+
+$ file ~/bashformat.sh
+/home/intra/bashformat.sh: Bourne-Again shell script, ASCII text executable
+
+$ file /home/intra/2026-05-24-12-53-38.010-VirtualBoxVM-22879.log
+/home/intra/2026-05-24-12-53-38.010-VirtualBoxVM-22879.log: ASCII text
+
+$ less 2026-05-24-12-53-38.010-VirtualBoxVM-22879.log
+Log created: 2026-05-24T12:53:38.104237000Z
+Process ID:  22879 (0x595f)
+Parent PID:  22817 (0x5921)
+Executable:  /usr/lib/virtualbox/VirtualBoxVM
+Arg[0]: /usr/lib/virtualbox/VirtualBoxVM
+Arg[1]: --comment
+Arg[2]: kali-linux-2025.4-virtualbox-amd64
+Arg[3]: --startvm
+Arg[4]: 30f61e0e-374a-4910-a0b9-b2a26519fa68
+Arg[5]: --no-startvm-errormsgbox
+E1000 #0: port=ffffffff mmio=ffffffffffffffff mac-cfg=08:00:27:63:b0:05 82540EM R0
+General registers ------------------------------------------------------------------
+(saí do less com a tecla q)
+
+Tipos encontrados:
+- imagem PNG
+- script do bash
+- arquivo de texto (log do VirtualBox)

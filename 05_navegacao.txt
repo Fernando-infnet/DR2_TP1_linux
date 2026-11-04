@@ -1,0 +1,10 @@
+Exercício 5 - Navegação
+
+$ cd /var/log
+$ pwd
+/var/log
+$ cd
+$ pwd
+/home/intra
+
+Comandos usados: cd /var/log, pwd, cd (volta pro diretório pessoal) e pwd de novo pra confirmar.

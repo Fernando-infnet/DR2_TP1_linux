@@ -1,0 +1,13 @@
+Exercício 7 - Manipulação de arquivos
+
+$ mkdir tp_linux
+
+$ cd tp_linux && touch teste.txt
+
+$ cd tp_linux && cp teste.txt teste_backup.txt
+
+$ cd tp_linux && rm teste.txt
+
+$ ls tp_linux
+teste_backup.txt
+

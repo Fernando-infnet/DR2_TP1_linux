@@ -1,0 +1,46 @@
+Exercício 10 - Expansões de shell
+
+$ ls /var/log/*.log
+/var/log/boot.log
+/var/log/pacman.log
+/var/log/Xorg.0.log
+/var/log/Xorg.1.log
+/var/log/Xorg.2.log
+
+$ ls ~/*.log | head -5
+/home/intra/2026-05-24-12-53-38.010-VirtualBoxVM-22879.log
+/home/intra/2026-05-24-12-53-47.000-VirtualBoxVM-22983.log
+/home/intra/2026-05-24-13-48-26.099-VirtualBoxVM-23562.log
+/home/intra/2026-05-24-13-57-40.007-VirtualBoxVM-42340.log
+/home/intra/2026-05-24-19-36-22.094-VirtualBoxVM-145586.log
+
+$ cd expansoes_teste && touch arquivo{1..5}.log relatorio_{jan,fev,mar}.txt
+
+$ ls expansoes_teste
+arquivo1.log
+arquivo2.log
+arquivo3.log
+arquivo4.log
+arquivo5.log
+relatorio_fev.txt
+relatorio_jan.txt
+relatorio_mar.txt
+
+$ ls expansoes_teste/*.log
+expansoes_teste/arquivo1.log
+expansoes_teste/arquivo2.log
+expansoes_teste/arquivo3.log
+expansoes_teste/arquivo4.log
+expansoes_teste/arquivo5.log
+
+$ ls expansoes_teste/relatorio_?a?.txt
+expansoes_teste/relatorio_jan.txt
+expansoes_teste/relatorio_mar.txt
+
+$ echo {a..e}
+a b c d e
+
+$ echo $((3*7))
+21
+
+* troca qualquer coisa, ? troca um caractere e {} gera várias palavras de uma vez.

@@ -1,0 +1,22 @@
+Exercício 1 - Sistema operacional
+
+$ uname -s
+Linux
+
+$ uname -r
+6.18.57-1-lts
+
+$ uname -m
+x86_64
+
+$ getconf LONG_BIT
+64
+
+$ uname -a
+Linux archlinux 6.18.57-1-lts #1 SMP PREEMPT_DYNAMIC Thu, 15 Oct 2026 13:43:34 +0000 x86_64 GNU/Linux
+
+Resumo:
+a) Nome: Linux (distribuição Arch Linux)
+b) Tipo: baseado em Unix (Unix-like)
+c) Versão: kernel 6.18.57-1-lts
+d) Arquitetura: x86_64, ou seja, 64 bits

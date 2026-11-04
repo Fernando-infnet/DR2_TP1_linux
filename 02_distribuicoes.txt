@@ -1,0 +1,29 @@
+Exercício 2 - Distribuições
+
+$ cat /etc/os-release
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+
+$ lsb_release -a 2>/dev/null
+LSB Version:	n/a
+Distributor ID:	Arch
+Description:	Arch Linux
+Release:	rolling
+Codename:	n/a
+
+Distribuição que estou usando: Arch Linux (rolling release, não tem número de versão fixo,
+vai atualizando sempre).
+
+Outras distribuições:
+- Ubuntu Server: muito usada em servidores, tem versões LTS com suporte longo e é bem estável.
+- Alpine Linux: bem pequena e leve, por isso é muito usada como base de imagens Docker (containers).
+- Fedora: pacotes mais novos, boa para desenvolvimento.

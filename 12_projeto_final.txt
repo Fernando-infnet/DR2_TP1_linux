@@ -1,0 +1,16 @@
+Exercício 12 - Projeto final
+
+$ mkdir projeto_final
+$ echo "Projeto final de Linux" > projeto_final/notas.txt
+
+$ ls projeto_final
+notas.txt
+
+$ file projeto_final/notas.txt
+projeto_final/notas.txt: ASCII text
+
+$ less projeto_final/notas.txt
+Projeto final de Linux
+
+$ type file
+file is /usr/bin/file

@@ -1,0 +1,27 @@
+Exercício 11 - Aspas
+
+$ cd aspas_teste && touch "meu arquivo.txt"
+
+$ ls aspas_teste
+meu arquivo.txt
+
+# testando sem as aspas pra ver o que acontece
+$ cd aspas_teste && touch outro arquivo.txt
+
+$ ls aspas_teste
+arquivo.txt
+meu arquivo.txt
+outro
+
+$ NOME=Fernando
+
+$ echo "Olá, $NOME"
+Olá, Fernando
+
+$ echo 'Olá, $NOME'
+Olá, $NOME
+
+Observações:
+- sem aspas o espaço separa os argumentos, então o touch criou dois arquivos (outro e arquivo.txt)
+- aspas duplas deixam o bash trocar a variável pelo valor ($NOME virou Fernando)
+- aspas simples mostram tudo exatamente como foi escrito, sem expandir nada
